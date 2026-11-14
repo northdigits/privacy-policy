@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Calculator Pro</title>
+  <meta name="description" content="Privacy Policy for Calculator Pro Android Application by NorthDigits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #10B981;
+      --primary-dark: #059669;
+      --primary-light: #ECFDF5;
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --card-border: #334155;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #38BDF8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 32px;
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.12) 0%, rgba(30, 41, 59, 0.4) 100%);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      margin-bottom: 32px;
+      backdrop-filter: blur(8px);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.2);
+      color: #34D399;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .lang-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #F1F5F9;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin: 18px 0 8px;
+    }
+
+    p {
+      color: #CBD5E1;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 24px;
+      margin-bottom: 16px;
+      color: #CBD5E1;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 10px 10px 0;
+      margin: 20px 0;
+      color: #E2E8F0;
+    }
+
+    .permission-item {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .permission-title {
+      font-weight: 700;
+      color: #F8FAFC;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .permission-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 0 16px;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 12px;
+      }
+      .card {
+        padding: 24px 18px;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="app-badge">
+        <span>🛡️</span> Privacy-First & 100% Offline
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        <strong>App:</strong> Calculator Pro (ক্যালকুলেটর প্রো) &bull; 
+        <strong>Developer:</strong> NorthDigits &bull; 
+        <strong>Effective Date:</strong> November 14, 2026
+      </p>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+        <button class="lang-btn" onclick="switchLanguage('bn')">বাংলা (Bengali)</button>
+      </div>
+    </header>
+
+    <!-- ==================== ENGLISH SECTION ==================== -->
+    <div id="section-en">
+      <div class="card">
+        <h2>1. Introduction</h2>
+        <p>
+          Welcome to <strong>Calculator Pro</strong> ("we", "our", or "the App"), developed by <strong>NorthDigits</strong>.
+          We are committed to protecting your privacy. This Privacy Policy outlines our principles regarding the collection, use, 
+          and safeguarding of your information when you use our mobile application.
+        </p>
+        <div class="highlight-box">
+          <strong>Privacy Summary:</strong> Calculator Pro is built on a 100% offline-first architecture. We do NOT collect, transmit, store, sell, or share any personal information, equations, calculation histories, or audio recordings.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>2. Information Collection & Usage</h2>
+        <p>
+          We do not require you to register, log in, or provide any personal details (such as your name, email, phone number, or physical address) to use the App.
+        </p>
+        <ul>
+          <li><strong>No Personal Data:</strong> No personal or identity information is accessed or collected.</li>
+          <li><strong>No Analytics / User Tracking:</strong> We do not employ third-party analytics SDKs, trackers, or behavioral profiling tools.</li>
+          <li><strong>Local Data Storage:</strong> All your calculation logs, custom unit conversions, business calculations, and preferences remain strictly on your local device and are never uploaded to any remote server.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>3. Device Permissions & Purpose</h2>
+        <p>
+          Calculator Pro requests minimal device permissions, strictly required to provide specific in-app features:
+        </p>
+
+        <div class="permission-item">
+          <div class="permission-title">🎤 android.permission.RECORD_AUDIO (Microphone)</div>
+          <p class="permission-desc">
+            <strong>Purpose:</strong> Used solely when you deliberately tap the voice calculator button to convert spoken math expressions (Bangla/English) into calculation equations.
+            <br>
+            <strong>Privacy Guarantee:</strong> Audio processing is executed in real-time through the system speech recognizer. We <strong>never</strong> record, store, transmit, or upload your voice to our or any third-party servers.
+          </p>
+        </div>
+
+        <div class="permission-item">
+          <div class="permission-title">📳 android.permission.VIBRATE (Vibration)</div>
+          <p class="permission-desc">
+            <strong>Purpose:</strong> Provides pleasant tactile haptic feedback when pressing keys on the calculator keypad. This can be toggled on or off at any time in the app settings.
+          </p>
+        </div>
+
+        <div class="permission-item">
+          <div class="permission-title">🌐 android.permission.INTERNET (Network Access)</div>
+          <p class="permission-desc">
+            <strong>Purpose:</strong> Used only when opening external system links (such as viewing this privacy policy, developer support, or using the standard Android sharing dialog). The core calculator engine runs entirely offline.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>4. Data Retention & Deletion</h2>
+        <p>
+          Because we do not store any user data on remote servers or cloud databases:
+        </p>
+        <ul>
+          <li>You have complete control over your calculation history tape at all times via the in-app "Clear Tape" (ইতিহাস মুছুন) button.</li>
+          <li>Clearing the app's cache/data via your Android device settings or uninstalling the app permanently erases all locally saved preferences and history records.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>5. Children’s Privacy (COPPA & GDPR-K Compliance)</h2>
+        <p>
+          Calculator Pro is a general utility calculator suitable for students, professionals, and users of all ages. 
+          We do not knowingly collect any personally identifiable information from children under the age of 13 (or under the applicable age in your jurisdiction). 
+          Because no user data is collected from anyone, the App complies with the Children’s Online Privacy Protection Act (COPPA) and GDPR-K.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>6. Third-Party Services & Links</h2>
+        <p>
+          The App does not contain third-party ad networks (such as AdMob), analytics trackers, or social network logins. 
+          If you choose to use the standard Android Share intent to share a calculation result, data is transmitted only to the target app you specifically select.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>7. Security</h2>
+        <p>
+          We prioritize the security of your device. Since all computations are performed on-device without external data transmission, 
+          your sensitive financial, business, and personal calculations remain completely confidential on your phone.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>
+          We may update our Privacy Policy periodically to reflect app updates or regulatory changes. 
+          Any revisions will be posted on this page with an updated "Effective Date". 
+          We recommend reviewing this page periodically for any updates.
+        </p>
+      </div>
+
+      <div class="card contact-box">
+        <h2>9. Contact Us</h2>
+        <p>
+          If you have any questions, suggestions, or concerns regarding this Privacy Policy or Calculator Pro, please contact us at:
+        </p>
+        <p>
+          <strong>Developer / Team:</strong> NorthDigits<br>
+          <strong>Email:</strong> <a href="mailto:support@northdigits.com">support@northdigits.com</a><br>
+          <strong>Application:</strong> Calculator Pro (<code>com.northdigits.calculator</code>)
+        </p>
+      </div>
+    </div>
+
+    <!-- ==================== BENGALI SECTION ==================== -->
+    <div id="section-bn" class="hidden">
+      <div class="card">
+        <h2>১. ভূমিকা ও মূলনীতি</h2>
+        <p>
+          <strong>NorthDigits</strong> দ্বারা নির্মিত <strong>ক্যালকুলেটর প্রো (Calculator Pro)</strong> অ্যাপ ব্যবহারে আপনাকে স্বাগতম। 
+          আমরা আপনার ব্যক্তিগত তথ্যের গোপনীয়তা রক্ষা করতে সম্পূর্ণরূপে প্রতিশ্রুতিবদ্ধ। 
+          এই গোপনীয়তা নীতিমালায় (Privacy Policy) আমাদের অ্যাপ ব্যবহারের সময় তথ্য সুরক্ষা ও ব্যবহারবিধি বিস্তারিত ব্যাখ্যা করা হয়েছে।
+        </p>
+        <div class="highlight-box">
+          <strong>গোপনীয়তার মূল কথা:</strong> ক্যালকুলেটর প্রো একটি সম্পূর্ণ অফলাইন-ভিত্তিক (100% Offline) নিরাপদ অ্যাপ। আমরা ব্যবহারকারীর কোনো প্রকার ব্যক্তিগত তথ্য, হিসাবের ইতিহাস, বা অডিও কোনো বহিরাগত সার্ভারে সংগ্রহ, সংরক্ষণ বা বিক্রি করি না।
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>২. তথ্য সংগ্রহ ও ব্যবহার</h2>
+        <p>
+          অ্যাপটি ব্যবহারের জন্য কোনো ধরনের অ্যাকাউন্ট তৈরি, লগইন বা ব্যক্তিগত তথ্য (যেমন নাম, ফোন নম্বর, ইমেইল ইত্যাদি) প্রদানের প্রয়োজন নেই।
+        </p>
+        <ul>
+          <li><strong>ব্যক্তিগত তথ্যহীন:</strong> ব্যবহারকারীর পরিচয় বা ব্যক্তিগত কোনো ডেটা সংগ্রহ করা হয় না।</li>
+          <li><strong>ট্র্যাকিং মুক্ত:</strong> কোনো থার্ড-পার্টি অ্যানালিটিক্স বা ট্র্যাকিং টুল ব্যবহার করা হয় না।</li>
+          <li><strong>লোকাল ডিভাইসে সংরক্ষণ:</strong> আপনার সমস্ত হিসাবের ইতিহাস, সোনার ভরি, জমির হিসাব ও সেটিংস শুধুমাত্র আপনার ডিভাইসেই সংরক্ষিত থাকে।</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>৩. ডিভাইসের পারমিশন ও উদ্দেশ্য</h2>
+        <p>
+          অ্যাপের নির্দিষ্ট কিছু ফিচার সঠিকভাবে পরিচালনার জন্য শুধুমাত্র প্রয়োজনীয় পারমিশন ব্যবহার করা হয়:
+        </p>
+
+        <div class="permission-item">
+          <div class="permission-title">🎤 মাইক্রোফোন (android.permission.RECORD_AUDIO)</div>
+          <p class="permission-desc">
+            <strong>উদ্দেশ্য:</strong> যখন আপনি ভয়েস ক্যালকুলেটর বাটনে ট্যাপ করেন, তখন মুখে বাংলায় বা ইংরেজিতে বলা গাণিতিক হিসাবকে সরাসরি সংখ্যায় রূপান্তর করার জন্য এটি ব্যবহৃত হয়।
+            <br>
+            <strong>নিরাপত্তা নিশ্চয়তা:</strong> আপনার কণ্ঠস্বর কোনো সার্ভারে পাঠানো বা রেকর্ড হিসেবে জমা রাখা হয় না। এটি তাৎক্ষণিকভাবে ডিভাইসের সিস্টেমের মাধ্যমে প্রসেস হয়।
+          </p>
+        </div>
+
+        <div class="permission-item">
+          <div class="permission-title">📳 ভাইব্রেশন (android.permission.VIBRATE)</div>
+          <p class="permission-desc">
+            <strong>উদ্দেশ্য:</strong> ক্যালকুলেটরের কিপ্যাড বাটন চাপার সময় বাস্তবসম্মত হ্যাপটিক টাচ ফিডব্যাক প্রদান করতে এটি ব্যবহৃত হয়। সেটিংস থেকে এটি যেকোনো সময় বন্ধ করা যায়।
+          </p>
+        </div>
+
+        <div class="permission-item">
+          <div class="permission-title">🌐 ইন্টারনেট অ্যাক্সেস (android.permission.INTERNET)</div>
+          <p class="permission-desc">
+            <strong>উদ্দেশ্য:</strong> শুধুমাত্র এই প্রাইভেসি পলিসি পেজ দেখা বা সাধারণ শেয়ারিং ডায়ালগ ওপেন করার কাজে প্রয়োজন হতে পারে। ক্যালকুলেটরের সমস্ত হিসাব সম্পূর্ণ অফলাইনে কার্যকর থাকে।
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>৪. ডেটা নিয়ন্ত্রণ ও মুছে ফেলা</h2>
+        <p>
+          যেহেতু কোনো ডেটা আমাদের কোনো সার্ভারে থাকে না, তাই আপনার ডেটার সম্পূর্ণ নিয়ন্ত্রণ আপনার নিজের হাতে:
+        </p>
+        <ul>
+          <li>অ্যাপের হিস্ট্রি প্যানেল থেকে "ইতিহাস মুছুন" বাটনে ট্যাপ করে যেকোনো সময় সমস্ত হিসাব মুছে ফেলতে পারবেন।</li>
+          <li>ডিভাইসের সেটিংস থেকে অ্যাপের ডেটা ক্লিয়ার করলে বা অ্যাপ আনইনস্টল করলে সমস্ত স্থানীয় রেকর্ড স্থায়ীভাবে মুছে যাবে।</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>৫. শিশুদের গোপনীয়তা (COPPA নীতি)</h2>
+        <p>
+          ক্যালকুলেটর প্রো সব বয়সী শিক্ষার্থী ও সাধারণ ব্যবহারকারীদের উপযোগী একটি শিক্ষামূলক ও গাণিতিক টুল। 
+          আমরা ১৩ বছরের কম বয়সী শিশুদের কাছ থেকে ইচ্ছাকৃতভাবে বা অনিচ্ছাকৃতভাবে কোনো ব্যক্তিগত তথ্য সংগ্রহ করি না।
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>৬. থার্ড-পার্টি সার্ভিস</h2>
+        <p>
+          আমাদের অ্যাপে কোনো বহিরাগত বিজ্ঞাপন নেটওয়ার্ক (যেমন AdMob) বা ডাটা ট্র্যাকার যুক্ত নেই। 
+          অ্যাপের হিসাব শেয়ার করার সময় শুধুমাত্র ব্যবহারকারীর নির্বাচিত অ্যাপের মাধ্যমেই তা শেয়ার হয়।
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>৭. নিরাপত্তা</h2>
+        <p>
+          যেহেতু সব গণনা সরাসরি আপনার ডিভাইসেই সম্পাদিত হয়, আপনার ব্যবসায়িক ও ব্যক্তিগত হিসাব-নিকাশ সম্পূর্ণ নিরাপদ ও গোপনীয় থাকে।
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>৮. নীতিমালা পরিবর্তন</h2>
+        <p>
+          ভবিষ্যতে নতুন ফিচার সংযোজন বা নীতিমালার প্রয়োজনে এই প্রাইভেসি পলিসি হালনাগাদ করা হতে পারে। যেকোনো পরিবর্তনের সাথে এই পেজে সর্বশেষ তারিখ উল্লেখ করা থাকবে।
+        </p>
+      </div>
+
+      <div class="card contact-box">
+        <h2>৯. আমাদের সাথে যোগাযোগ</h2>
+        <p>
+          এই প্রাইভেসি পলিসি বা অ্যাপ সম্পর্কিত যেকোনো প্রশ্ন বা মতামতের জন্য নির্দ্বিধায় আমাদের সাথে যোগাযোগ করতে পারেন:
+        </p>
+        <p>
+          <strong>ডেভেলপার টিম:</strong> NorthDigits<br>
+          <strong>ইমেইল:</strong> <a href="mailto:support@northdigits.com">support@northdigits.com</a><br>
+          <strong>অ্যাপ্লিকেশান:</strong> Calculator Pro (<code>com.northdigits.calculator</code>)
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 NorthDigits. All rights reserved.</p>
+      <p style="margin-top: 4px; font-size: 0.8rem;">Calculator Pro &bull; com.northdigits.calculator</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      const enSec = document.getElementById('section-en');
+      const bnSec = document.getElementById('section-bn');
+      const buttons = document.querySelectorAll('.lang-btn');
+
+      if (lang === 'bn') {
+        enSec.classList.add('hidden');
+        bnSec.classList.remove('hidden');
+        buttons[0].classList.remove('active');
+        buttons[1].classList.add('active');
+      } else {
+        bnSec.classList.add('hidden');
+        enSec.classList.remove('hidden');
+        buttons[1].classList.remove('active');
+        buttons[0].classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
